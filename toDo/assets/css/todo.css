@@ -29,6 +29,10 @@ h1 {
   color: white;
 }
 
+h1 i {
+  float: right;
+}
+
 input[type='text'] {
   height: 40px;
   width: 100%;
@@ -49,12 +53,24 @@ ul {
 li {
   display: block;
   height: 40px;
-  padding-left: 20px;
   line-height: 40px;
 }
 
 li:nth-child(2n) {
   background-color: white;
+}
+
+ul span {
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: red;
+  color: #fff;
+}
+
+ul span:hover {
+  background: #147dcf;
 }
 
 .done {
