@@ -2,7 +2,7 @@ $('ul').on('click', 'li', function () {
   $(this).toggleClass('done');
 });
 
-$('i').click(function (e) {
+$('li span i').click(function (e) {
   e.stopPropagation();
   $(this)
     .parent()
@@ -17,5 +17,14 @@ $('input[type="text"]').keypress(function (e) {
     $('ul').append('<li>' + $(this).val() + '</li>');
     // console.log($(this).val());
     $(this).val('');
+  }
+});
+
+$('#plus').click(function () {
+  let inputVar = $('input[type="text"]');
+  if (inputVar.css('display') === 'inline-block') {
+    inputVar.css('display', 'none');
+  } else {
+    inputVar.css('display', 'inline-block');
   }
 });

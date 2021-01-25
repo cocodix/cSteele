@@ -60,17 +60,21 @@ li:nth-child(2n) {
   background-color: white;
 }
 
-ul span {
+li span {
   text-align: center;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
   background: red;
   color: #fff;
+  margin-right: 20px;
+  height: 40;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
 }
 
-ul span:hover {
-  background: #147dcf;
+li:hover span {
+  width: 40px;
+  opacity: 100%;
 }
 
 .done {
